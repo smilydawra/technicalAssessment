@@ -22,14 +22,14 @@ const Landing = () => {
     }, [dispatch]);
 
     return (
-        <Box>
+        <Box bgColor="#a6a39d">
             <Header />
             <AppWrapper>
                 <Banner />
                 <Content />
             </AppWrapper>
             <Footer />
-        </Box>
+        </Box >
     )
 }
 

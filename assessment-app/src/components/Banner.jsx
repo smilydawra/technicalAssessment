@@ -3,8 +3,8 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <Box mt={8}>
-            <Image w="100%" src="https://images-na.ssl-images-amazon.com/images/I/61%2BTFTVHK9L._AC_SY355_.jpg" alt="Segun Adebayo" />
+        <Box mt={8} bgColor="transparent">
+            <Image w="100%" src="https://wallpaperaccess.com/full/952743.jpg" alt="Star Wars - Picture credits: wallpaperaccess.com" />
         </Box>
     )
 }
