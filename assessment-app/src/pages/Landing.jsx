@@ -1,6 +1,9 @@
 import { Box } from '@chakra-ui/react';
 import styled from '@emotion/styled';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchCharacters } from '../actions/character/character';
+import { fetchmovies } from '../actions/movie/movie';
 import Banner from '../components/Banner';
 import Content from '../components/Content';
 import Footer from '../components/Footer';
@@ -11,6 +14,13 @@ const AppWrapper = styled(Box)`
 `;
 
 const Landing = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchCharacters({}));
+        dispatch(fetchmovies({}));
+    }, [dispatch]);
+
     return (
         <Box>
             <Header />

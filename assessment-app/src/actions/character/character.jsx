@@ -1,5 +1,5 @@
 import { FETCH_CHARACTERS_START, FETCH_CHARACTERS_SUCCESS, FETCH_CHARACTERS_FAILURE } from './types';
-import CharacterAPIGateway from '../gateways/characterGateway';
+import CharacterAPIGateway from '../../gateways/characterGateway';
 
 const characterGateway = new CharacterAPIGateway();
 export const fetchCharacters = (params) => (dispatch) => {
